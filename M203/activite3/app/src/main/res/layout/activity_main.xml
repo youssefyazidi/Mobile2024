@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="*">
+
+    <TableRow>
+
+        <TextView
+            android:text="Poids :"
+            android:textColor="#FF0000"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/txtPoids"
+            android:hint="Poids"
+            android:layout_span="2"
+            android:inputType="numberDecimal"
+            ></EditText>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Taille :"
+            android:textColor="#FF0000"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/txtTaille"
+            android:hint="Taille"
+            android:layout_span="2"
+            ></EditText>
+    </TableRow>
+    <TableRow>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radioMetre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mètre"
+                android:textSize="20sp"
+                android:checked="true"
+                ></RadioButton>
+            <RadioButton
+                android:id="@+id/radioCentimetre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centimètre"
+                android:textSize="20sp"
+                ></RadioButton>
+        </RadioGroup>
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/checkMega"
+            android:text="Mega fonction"
+            android:textSize="20sp"
+            >
+
+        </CheckBox>
+
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btnCalculer"
+            android:text="Calculer l'IMC"
+            >
+
+        </Button>
+        <Button
+            android:id="@+id/btnAnnuler"
+            android:text="Annuler"
+            android:layout_column="2"
+            >
+
+        </Button>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textViewResultat"
+            android:text="Resultat  :"
+            android:textSize="26sp"
+            >
+
+        </TextView>
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="Vous devez cliquer sur le bouton &lt;&lt;Calculer l'IMC&gt;&gt; pour avoir le résultat."
+            android:textSize="20sp"
+            android:layout_span="3"
+            >
+
+        </TextView>
+    </TableRow>
+
+</TableLayout>
