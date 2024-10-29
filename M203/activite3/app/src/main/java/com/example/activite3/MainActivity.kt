@@ -1,11 +1,13 @@
 package com.example.activite3
 
+import android.content.Context
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -69,7 +71,34 @@ class MainActivity : AppCompatActivity() {
             textResultat.text = "Resultat :"
 
         }
+        buttonCalculer.setOnClickListener {
 
+            if (editTextPoids.text.isEmpty() || editTextPoids.text.isEmpty() )
+            {
+                Toast.makeText(applicationContext,
+                    "Veuillez entrer le données !!",
+                    Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
+            else {
+                val poids = editTextPoids.text.toString().toDouble()
+                var taille = editTextTaille.text.toString().toDouble()
+
+                if (taille == 0.0)
+                {
+                    Toast.makeText(applicationContext,
+                        "Veuillez entrer une taille positive !!",
+                        Toast.LENGTH_LONG).show()
+                    return@setOnClickListener
+                }
+                if (radioCentimetre.isChecked)
+                {
+                    taille = taille/100
+                }
+                val imc = poids/(taille*taille)
+                textResultat.text = "Resultat :  %.3f ".format(imc)
+            }
+        }
     }
 
 
