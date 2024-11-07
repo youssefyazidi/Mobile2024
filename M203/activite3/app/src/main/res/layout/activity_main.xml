@@ -11,8 +11,8 @@
     <TableRow>
 
         <TextView
-            android:text="Poids :"
-            android:textColor="#FF0000"
+            android:text="@string/poids"
+            android:textColor="@color/red"
             android:textSize="26sp"
             android:textAlignment="center"
             >
@@ -26,8 +26,8 @@
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Taille :"
-            android:textColor="#FF0000"
+            android:text="@string/taille"
+            android:textColor="@color/red"
             android:textSize="26sp"
             android:textAlignment="center"
             >
@@ -56,7 +56,7 @@
                 android:id="@+id/radioCentimetre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Centimètre"
+                android:text="@string/centim_tre"
                 android:textSize="20sp"
                 ></RadioButton>
         </RadioGroup>
@@ -64,7 +64,7 @@
     <TableRow>
         <CheckBox
             android:id="@+id/checkMega"
-            android:text="Mega fonction"
+            android:text="@string/mega_fonction"
             android:textSize="20sp"
             >
 
@@ -74,13 +74,13 @@
     <TableRow>
         <Button
             android:id="@+id/btnCalculer"
-            android:text="Calculer l'IMC"
+            android:text="@string/calculer_l_imc"
             >
 
         </Button>
         <Button
             android:id="@+id/btnAnnuler"
-            android:text="Annuler"
+            android:text="@string/annuler"
             android:layout_column="2"
             >
 
@@ -90,7 +90,7 @@
     <TableRow>
         <TextView
             android:id="@+id/textViewResultat"
-            android:text="Resultat  :"
+            android:text="@string/resultat"
             android:textSize="26sp"
             >
 
@@ -100,7 +100,7 @@
     <TableRow>
 
         <TextView
-            android:text="Vous devez cliquer sur le bouton &lt;&lt;Calculer l'IMC&gt;&gt; pour avoir le résultat."
+            android:text="@string/message"
             android:textSize="20sp"
             android:layout_span="3"
             >
