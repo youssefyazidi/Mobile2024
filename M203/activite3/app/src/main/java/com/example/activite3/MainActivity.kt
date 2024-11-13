@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
 
         //Lier les comosants graphiques aux references
         editTextTaille =findViewById(R.id.txtTaille)
+        editTextTaille.requestFocus()
         editTextPoids=findViewById(R.id.txtPoids)
 
         radioMetre=findViewById(R.id.radioMetre)
