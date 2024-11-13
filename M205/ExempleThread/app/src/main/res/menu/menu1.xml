@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-  
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/id1"
+        android:title="call"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_call"
+        />
+    <item android:id="@+id/id2"
+        android:title="edit"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_edit"
+        />
+
+    <item android:id="@+id/id3"
+        android:title="settings"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/id4"
+        android:title="exit"
+        app:showAsAction="never"
+        />
 </menu>

@@ -1,4 +1,8 @@
 package com.example.exemplethread
 
-class AsyncTask1 {
-}
+import android.os.AsyncTask
+import android.util.Log
+import android.view.View
+import android.widget.Toast
+
+
